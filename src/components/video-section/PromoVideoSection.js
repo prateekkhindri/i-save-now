@@ -16,10 +16,10 @@ export const PromoVideoSection = () => {
 
       {/* Overlay Content */}
       <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center p-4 z-10">
-        <h1 className="mt-6 text-white text-3xl font-extrabold leading-9 text-center md:text-left lg:text-5xl xl:text-6xl mb-4">
+        <h1 className="mt-6 text-white text-2xl font-extrabold leading-9 text-center md:text-left lg:text-5xl xl:text-6xl mb-4">
           Savings you don't want to miss!
         </h1>
-        <p className="text-white text-center mb-8 mt-2 lg:mt-4 text-base lg:text-lg max-w-[477px] font-normal leading-6 md:text-left ml-12">
+        <p className="text-white text-center text-sm mb-8 mt-2 lg:mt-4 lg:text-lg max-w-[477px] font-normal leading-6 md:text-left ml-12">
           Be the first to know when you can unlock incredible savings. Sign up
           to our exclusive mailing list today.
         </p>
