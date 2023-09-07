@@ -3,6 +3,7 @@ import { Header } from "../../components/header/Header";
 import { PromoVideoSection } from "../../components/video-section/PromoVideoSection";
 import { Footer } from "../../components/footer/Footer";
 import { AboutSection } from "../../components/about/AboutSection";
+import { BrandsBanner } from "../../components/brands/BrandsBanner";
 
 const ComingSoon = () => {
   return (
@@ -12,6 +13,8 @@ const ComingSoon = () => {
       <PromoVideoSection />
 
       <AboutSection />
+
+      <BrandsBanner />
 
       <Footer />
     </div>

@@ -67,3 +67,8 @@ body:hover::-webkit-scrollbar {
 body:hover::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.1);
 }
+
+/* Style for the active bullet */
+.swiper-pagination-bullet-active {
+  background-color: #333333 !important;
+}
