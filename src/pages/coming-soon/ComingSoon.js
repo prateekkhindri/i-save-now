@@ -4,6 +4,7 @@ import { PromoVideoSection } from "../../components/video-section/PromoVideoSect
 import { Footer } from "../../components/footer/Footer";
 import { AboutSection } from "../../components/about/AboutSection";
 import { BrandsBanner } from "../../components/brands/BrandsBanner";
+import { ScrollingVideoSection } from "../../components/scrolling-section/ScrollingVideoSection";
 
 const ComingSoon = () => {
   return (
@@ -15,6 +16,8 @@ const ComingSoon = () => {
       <AboutSection />
 
       <BrandsBanner />
+
+      <ScrollingVideoSection />
 
       <Footer />
     </div>

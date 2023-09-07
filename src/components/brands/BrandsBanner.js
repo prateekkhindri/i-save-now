@@ -18,7 +18,7 @@ import brand5 from "../../assets/Brands-Banners-5.png";
 
 export const BrandsBanner = () => {
   return (
-    <div className="max-w-screen-xl mx-auto mb-8">
+    <div className="max-w-screen-xl mx-auto">
       <Swiper
         loop={true}
         spaceBetween={0}
@@ -36,7 +36,7 @@ export const BrandsBanner = () => {
           prevEl: ".button-prev-slide",
         }}
         scrollbar={{ draggable: true }}
-        className="relative mySwiper"
+        className="relative mySwiper brands-swiper"
         modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
       >
         <SwiperSlide>

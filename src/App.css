@@ -68,7 +68,15 @@ body:hover::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.1);
 }
 
+.brands-swiper {
+  padding-bottom: 40px !important;
+}
+
 /* Style for the active bullet */
 .swiper-pagination-bullet-active {
   background-color: #333333 !important;
+}
+
+.brands-swiper .swiper-pagination-bullets {
+  bottom: -5px !important;
 }
