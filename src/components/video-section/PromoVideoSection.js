@@ -25,7 +25,7 @@ export const PromoVideoSection = () => {
         </p>
 
         {/* Form */}
-        <form name="registrationForm" data-netlify="true">
+        <form name="registrationForm" data-netlify="true" method="POST">
           <input type="hidden" name="form-name" value="registrationForm" />
           <div className="space-y-4 mb-4">
             <div className="flex space-x-4">
