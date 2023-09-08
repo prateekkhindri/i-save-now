@@ -31,8 +31,8 @@ export const PromoVideoSection = () => {
           Savings you don't want to miss!
         </h1>
         <p className="text-white text-sm lg:text-lg max-w-[477px] font-normal leading-6 text-center md:text-lg">
-          Be the first to know when you can unlock incredible savings. Sign up
-          to our exclusive mailing list today.
+          Be the first to know when you can unlock incredible savings. Register
+          for exclusive first access.
         </p>
 
         {/* Form */}
