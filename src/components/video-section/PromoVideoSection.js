@@ -25,17 +25,20 @@ export const PromoVideoSection = () => {
         </p>
 
         {/* Form */}
-        <form>
+        <form name="registrationForm" data-netlify="true">
+          <input type="hidden" name="form-name" value="registrationForm" />
           <div className="space-y-4 mb-4">
             <div className="flex space-x-4">
               <input
                 type="text"
+                name="firstName"
                 placeholder="First name"
                 className="transition-all focus:border-[#4C00B0] border-[#BA77E2] w-full bg-[#F8F8F8] outline-none rounded-3xl px-5 py-3 border text-[#2C2C2C] font-medium leading-5 text-center text-lg"
                 required
               />
               <input
                 type="text"
+                name="lastName"
                 placeholder="Last name"
                 className="transition-all focus:border-[#4C00B0] border-[#BA77E2] w-full bg-[#F8F8F8] outline-none rounded-3xl px-5 py-3 border text-[#2C2C2C] font-medium leading-5 text-center text-lg"
                 required
@@ -43,6 +46,7 @@ export const PromoVideoSection = () => {
             </div>
             <input
               type="email"
+              name="email"
               placeholder="Enter email address"
               className="transition-all focus:border-[#4C00B0] border-[#BA77E2] w-full bg-[#F8F8F8] outline-none rounded-3xl px-5 py-3 border text-[#2C2C2C] font-medium leading-5 text-center text-lg"
               required
