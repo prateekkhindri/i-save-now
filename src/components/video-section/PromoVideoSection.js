@@ -26,12 +26,12 @@ export const PromoVideoSection = () => {
 
         {/* Form */}
         <form
-          name="registrationForm"
+          name="contact v1"
           data-netlify="true"
           method="post"
           onSubmit="submit"
         >
-          <input type="hidden" name="form-name" value="registrationForm" />
+          <input type="hidden" name="form-name" value="contact v1" />
           <div className="space-y-4 mb-4">
             <div className="flex space-x-4">
               <input
