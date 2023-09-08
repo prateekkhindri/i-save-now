@@ -14,13 +14,6 @@ export const PromoVideoSection = () => {
         className="absolute top-0 left-0 w-full h-full object-cover"
       />
 
-      {/* Hidden Form for Netlify */}
-      <form name="registrationForm" data-netlify="true" hidden>
-        <input type="text" name="firstName" />
-        <input type="text" name="lastName" />
-        <input type="email" name="email" />
-      </form>
-
       {/* Overlay Content */}
       <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center p-4 z-10">
         <h1 className="mt-6 text-white text-2xl font-extrabold leading-9 text-center md:text-left lg:text-5xl xl:text-6xl mb-4">
@@ -35,8 +28,8 @@ export const PromoVideoSection = () => {
         <form
           name="registrationForm"
           data-netlify="true"
-          method="POST"
-          action="/"
+          method="post"
+          onSubmit="submit"
         >
           <input type="hidden" name="form-name" value="registrationForm" />
           <div className="space-y-4 mb-4">
