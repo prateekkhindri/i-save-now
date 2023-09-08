@@ -16,7 +16,7 @@ export const AboutSection = () => {
             <br className="hidden sm:block" />
             you never have to miss out on what you want.{" "}
             <br className="hidden sm:block" />
-            Save now to start saving big!
+            Register now to start saving big!
           </p>
         </div>
       </div>
