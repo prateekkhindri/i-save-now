@@ -30,7 +30,7 @@ export const PromoVideoSection = () => {
         <h1 className="text-white text-xl md:text-2xl lg:text-3xl xl:text-4xl font-extrabold leading-tight text-center">
           Savings you don't want to miss!
         </h1>
-        <p className="text-white text-sm md:text-base lg:text-lg max-w-[477px] font-normal leading-6 text-center md:text-lg">
+        <p className="text-white text-sm lg:text-lg max-w-[477px] font-normal leading-6 text-center md:text-lg">
           Be the first to know when you can unlock incredible savings. Sign up
           to our exclusive mailing list today.
         </p>
