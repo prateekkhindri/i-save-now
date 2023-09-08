@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import videoBg from "../../assets/iSaveNow-Video-background-v2.mp4";
 
 export const PromoVideoSection = () => {
+  const [form, setForm] = useState({});
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setForm({
+      ...form,
+      [name]: value,
+    });
+  };
+
   return (
     <section className="relative h-screen mt-16">
       {/* Background Video */}
@@ -25,18 +36,14 @@ export const PromoVideoSection = () => {
         </p>
 
         {/* Form */}
-        <form
-          name="contact v1"
-          data-netlify="true"
-          method="post"
-          onSubmit="submit"
-        >
-          <input type="hidden" name="form-name" value="contact v1" />
+        <form name="contact" method="POST">
+          <input type="hidden" name="form-name" value="contact" />
           <div className="space-y-4 mb-4">
             <div className="flex space-x-4">
               <input
                 type="text"
                 name="firstName"
+                onChange={handleChange}
                 placeholder="First name"
                 className="transition-all focus:border-[#4C00B0] border-[#BA77E2] w-full bg-[#F8F8F8] outline-none rounded-3xl px-5 py-3 border text-[#2C2C2C] font-medium leading-5 text-center text-lg"
                 required
@@ -44,6 +51,7 @@ export const PromoVideoSection = () => {
               <input
                 type="text"
                 name="lastName"
+                onChange={handleChange}
                 placeholder="Last name"
                 className="transition-all focus:border-[#4C00B0] border-[#BA77E2] w-full bg-[#F8F8F8] outline-none rounded-3xl px-5 py-3 border text-[#2C2C2C] font-medium leading-5 text-center text-lg"
                 required
@@ -52,6 +60,7 @@ export const PromoVideoSection = () => {
             <input
               type="email"
               name="email"
+              onChange={handleChange}
               placeholder="Enter email address"
               className="transition-all focus:border-[#4C00B0] border-[#BA77E2] w-full bg-[#F8F8F8] outline-none rounded-3xl px-5 py-3 border text-[#2C2C2C] font-medium leading-5 text-center text-lg"
               required
