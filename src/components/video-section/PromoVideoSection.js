@@ -26,26 +26,26 @@ export const PromoVideoSection = () => {
       />
 
       {/* Overlay Content */}
-      <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center p-4 z-10">
-        <h1 className="mt-6 text-white text-2xl font-extrabold leading-9 text-center md:text-left lg:text-5xl xl:text-6xl mb-4">
+      <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center p-4 z-10 space-y-6 md:space-y-8 lg:space-y-12">
+        <h1 className="text-white text-xl md:text-2xl lg:text-3xl xl:text-4xl font-extrabold leading-tight text-center">
           Savings you don't want to miss!
         </h1>
-        <p className="text-white text-center text-sm mb-8 mt-2 lg:mt-4 lg:text-lg max-w-[477px] font-normal leading-6 md:text-left ml-12">
+        <p className="text-white text-sm md:text-base lg:text-lg max-w-[477px] font-normal leading-6 text-center md:text-lg">
           Be the first to know when you can unlock incredible savings. Sign up
           to our exclusive mailing list today.
         </p>
 
         {/* Form */}
-        <form name="contact" method="POST">
+        <form name="contact" method="POST" className="w-full max-w-xl">
           <input type="hidden" name="form-name" value="contact" />
-          <div className="space-y-4 mb-4">
-            <div className="flex space-x-4">
+          <div className="space-y-4">
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <input
                 type="text"
                 name="firstName"
                 onChange={handleChange}
                 placeholder="First name"
-                className="transition-all focus:border-[#4C00B0] border-[#BA77E2] w-full bg-[#F8F8F8] outline-none rounded-3xl px-5 py-3 border text-[#2C2C2C] font-medium leading-5 text-center text-lg"
+                className="transition-all focus:border-[#4C00B0] border-[#BA77E2] w-full bg-[#F8F8F8] outline-none rounded-3xl px-4 py-2 sm:px-5 sm:py-3 border text-[#2C2C2C] font-medium leading-5 text-center sm:text-left text-lg"
                 required
               />
               <input
@@ -53,7 +53,7 @@ export const PromoVideoSection = () => {
                 name="lastName"
                 onChange={handleChange}
                 placeholder="Last name"
-                className="transition-all focus:border-[#4C00B0] border-[#BA77E2] w-full bg-[#F8F8F8] outline-none rounded-3xl px-5 py-3 border text-[#2C2C2C] font-medium leading-5 text-center text-lg"
+                className="transition-all focus:border-[#4C00B0] border-[#BA77E2] w-full bg-[#F8F8F8] outline-none rounded-3xl px-4 py-2 sm:px-5 sm:py-3 border text-[#2C2C2C] font-medium leading-5 text-center sm:text-left text-lg"
                 required
               />
             </div>
@@ -62,15 +62,15 @@ export const PromoVideoSection = () => {
               name="email"
               onChange={handleChange}
               placeholder="Enter email address"
-              className="transition-all focus:border-[#4C00B0] border-[#BA77E2] w-full bg-[#F8F8F8] outline-none rounded-3xl px-5 py-3 border text-[#2C2C2C] font-medium leading-5 text-center text-lg"
+              className="transition-all focus:border-[#4C00B0] border-[#BA77E2] w-full bg-[#F8F8F8] outline-none rounded-3xl px-4 py-2 sm:px-5 sm:py-3 border text-[#2C2C2C] font-medium leading-5 text-center sm:text-left text-lg"
               required
             />
           </div>
 
           {/* Register Button */}
-          <div className="flex items-center justify-center w-full mt-8">
+          <div className="flex items-center justify-center w-full mt-4 sm:mt-8">
             <button
-              className="bg-[#BA77E2] px-12 py-3 text-center rounded-3xl font-medium text-sm hover:opacity-80"
+              className="bg-[#BA77E2] px-8 sm:px-12 py-2 sm:py-3 text-center rounded-3xl font-medium text-sm sm:text-base hover:opacity-80"
               type="submit"
             >
               Register

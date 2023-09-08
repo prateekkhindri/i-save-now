@@ -9,7 +9,7 @@ export const Header = () => {
           <img
             src={logo}
             alt="iSaveNow Logo"
-            className="h-[15px] xs:h-[48px]"
+            className="h-[48px] sm:h-[15px] md:h-[48px]"
           />
         </div>
       </div>
